@@ -1,0 +1,11 @@
+.venv/
+_site/
+__pycache__/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.DS_Store
+# local test print artefacts
+/ZCode.pdf
+*.pdf

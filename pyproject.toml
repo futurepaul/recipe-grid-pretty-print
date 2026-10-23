@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recipe-grid-pretty-print"
+version = "0.1.0"
+description = "Beautiful, print-ready HTML recipe tables from recipe-grid source files."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Paul" }]
+keywords = ["recipe", "cooking", "html", "print", "pdf", "recipe-grid"]
+dependencies = ["recipe_grid>=2.1.0"]
+
+[project.urls]
+Homepage = "https://github.com/futurepaul/recipe-grid-pretty-print"
+InspiredBy = "https://recipetables.com/how-it-works"
+Upstream = "https://github.com/mossblaser/recipe_grid"
+
+[project.scripts]
+recipe-grid-pretty-print = "recipe_grid_pretty_print.scripts:main"
+
+[tool.setuptools]
+packages = ["recipe_grid_pretty_print"]
